@@ -1,189 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="bodyFat.css">
-
-  <script src="jquery-3.4.1.min.js"></script>
-
-
-  <title>bodyFat calculator</title>
-
-  <div class="navBar">
-    <h2>體脂計算器</h2>
-    <a href="https://www.facebook.com/profile.php?id=100003999642145" target="_blank"><img src="img/fb.png" alt=""></a>
-  </div>
-
-  <script type="text/javascript">
-
-    $(function() {
-        $("#calc").click(function() {
-          var h = $("#height").val(),
-              w = $("#weight").val(),
-              a = $("#age").val(),
-              s = $("#sex").val();
-
-
-          if (h == '') {
-            alert("請輸入身高 ~");
-          } else if (w == "") {
-            alert("請輸入體重 ~");
-          } else if (a == "") {
-            alert("請輸入年齡 ~");
-          } else if(h > 2) {
-            alert("你是不是巨人 身高要填公尺唷XD")
-          }  else {
-            // 計算並回傳 BMI 數值，只取到小數點第 2 位
-            var bmi = w / (h * h);
-            $("#BmiValue").val(formatFloat(bmi, 2));
-            BmiStandard(bmi);
-
-
-            var bmiRate = (1.2 * bmi) + (0.23 * a - 5.4) - (10.8 * s);
-            $("#bodyRateValue").val(formatFloat(bmiRate, 2));
-            bodyRateStandard(s, bmiRate);
-          }
-        });
-        var BmiStandardResult = $("#BmiStandard");
-        if (BmiStandardResult <18.5){
-          alert("繼續保持");
-        }else if (BmiStandardResult >24) {
-          alert("繼續保持");
-        }
-        $("#empty").click(function() {
-          $("#height").val('');
-          $("#weight").val('');
-          $("#age").val('');
-          $("#BmiValue").val('');
-          $("#bodyRateValue").val('');
-          $("#BmiStandard").val('');
-          $("#bodyRateStandard").val('');
-        });
-      });
-
-
-      function BmiStandard(n) {
-        if (n < 18.5) {
-          $('#BmiStandard').val('太輕囉');
-          // alert("宜盈趕快去吃飯")
-        } else if (n > 24) {
-          $('#BmiStandard').val('太重囉');
-        } else {
-          $('#BmiStandard').val('超標準');
-        }
-      }
-
-      function bodyRateStandard(g, f) {
-        if (g == 1 && f <= 25) {
-          $('#bodyRateStandard').val('標準');
-        } else if (g == 1 && f > 25) {
-          $('#bodyRateStandard').val('肥胖');
-        } else if (g == 0 && f <= 30) {
-          $('#bodyRateStandard').val('標準');
-        } else if (g == 0 && f > 30) {
-          $('#bodyRateStandard').val('肥胖');
-        }
-      }
-
-      function formatFloat(num, pos) {
-        var size = Math.pow(10, pos);
-        return Math.round(num * size) / size;
-      }
-  </script>
+  <title>CodePen - 個人CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" type="image/x-icon">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.css'><link rel="stylesheet" href="./style.css">
 
 </head>
-
 <body>
-  <div class="title">
-    <h2>體脂率</h2>
-    <hr>
-  </div>
-  <div class="containerContent">
-    <div class="left">
-      <div class="introduction">
-        <h2>Introduction</h2>
-        <p>體脂肪率，又稱體脂百分比、體脂率，是將脂肪含量用其占總體重的百分比的形式表示，一般用於動物，但近年開始有在人體的應用。對於動物來說，體脂百分比的計算法是把動物體重中的脂肪部分重量與整個身體的分量相除，再乘以100%。
-        </p>
-        <p>對於男性，必需脂肪一般佔體重的2～5%，而女性約為10～13%。儲存脂肪由脂肪組織內所累積的脂肪組成，當中部份位於胸腔及腹部，用以保護身體的內臟。一般來說，最小的建議總體脂百分比都會比身體的必需脂肪比例高。直接測量體脂百分比具有一定的難度，所以現時網上一般的方法，都是透過對人的性別及體重資料作出評估。
-        </p>
-      </div>
-      <div class="reduceBodyFat">
-        <h2>Reduce Bodyfat</h2>
-        <p>降低體脂肪比率方法：</p>
-        <ul>
-          <li>透過有氧運動減少脂肪。</li>
-          <li>透過重量訓練增加肌肉量，充足的肌肉所燃燒的脂肪比長時間有氧運動更強大。</li>
-          <li>減少攝入熱量，自然消耗體脂肪方法，一般是節食，節食方法需要堅持較長時間，對身體和意志力都是考驗。</li>
-        </ul>
-      </div>
-    </div>
-    <div class="right">
-      <div class="Standard">
-        <h2>Standard</h2>
-        <p>雖然要直接測量體脂百分比具有一定的難度，但也不是完全沒有辦法的。其中最為精確但較為昂貴的方法是測量患者在水下的體重，即靜水體重。其他較為簡單但精確度稍差的方法是，測量皮褶厚度，也即測定特定部位皮下脂肪的厚度。另一個方法是測量生物電阻，但該方法由於多數家用儀器僅僅測量雙腳間的生物電阻且精度不同，所以並不被一些機構推薦為替代 BMI 的方法。
-        </p>
-      </div>
-      <div class="formula">
-        <h2>Formula</h2>
-        <h3>體脂 (%) = ( 1.2 x BMI ) + ( 0.23 x 年齡 - 5.4 ) - ( 10.8 x 性別 )</h3>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+  <div class="bg"></div>
+  <div class="header jsHeader">
+    <div class="container">
+      <div class="navbar">
+        <div class="left"><a class="fab fa-facebook-square" href="https://www.facebook.com/profile.php?id=100003999642145" target="_blank"></a><a class="fab fa-line" href="https://line.me/ti/p/aJVH0cDKSp" target="_blank"></a><a class="fab fa-dribbble" href="https://www.instagram.com/shaiya_chen/" target="_blank"></a></div>
+        <div class="right"><a class="menu" href="#response">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div></a>
+          <div class="responseMenu" id="response">
+            <div class="container"><a class="responseClose" href="#">
+                <div class="bar bar4"></div>
+                <div class="bar bar5"></div></a>
+              <ul class="ulmenu">
+                <li><a class="responseList" href="#topPage">Home</a></li>
+                <li><a class="responseList" href="#skillPage">Skill</a></li>
+                <li><a class="responseList" href="#ExperiencePage">Experience</a></li>
+                <li><a class="responseList" href="#WorksPage">My Works</a></li>
+                <li><a class="responseList" href="#ContactPage">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="containerInformation">
-    <div class="containerInput">
-      <div class="height">
-        <span>身高 (m):</span>
-        <input type="number" id="height" name="" value="" placeholder="請輸入身高(單位為公尺唷)">
-      </div>
-      <div class="weight">
-        <span>體重 (kg):</span>
-        <input type="number" id="weight" name="" value="" placeholder="請輸入體重">
-      </div>
-      <div class="age">
-        <span>年齡 (year):</span>
-        <input type="number" id="age" name="" value="" placeholder="請輸入年齡">
-      </div>
-      <div class="sex">
-        <span>性別: </span>
-        <select id="sex">
-          <option value="1">男生 (Male)</option>
-          <option value="0">女生 (Female)</option>
-        </select>
+  <div class="main">
+    <div class="intro" id="topPage">
+      <div class="container">
+        <div class="intro-bg"></div>
+        <div class="title wow rubberBand">
+          <h1>I'AM Nash</h1>
+          <div class="btn">Contact</div>
+        </div>
       </div>
     </div>
-
-    <div class="containerText">
-      <div class="BmiValue">
-        <span>BMI數值: </span>
-        <input type="text" id="BmiValue" name="" readonly="true">
-      </div>
-      <div class="bodyRateValue">
-        <span>體指率數值: </span>
-        <input type="text" id="bodyRateValue" name="" readonly="true">
-      </div>
-      <div class="BmiStandard">
-        <span>BMI標準: </span>
-        <input type="text" id="BmiStandard" name="" readonly="true">
-      </div>
-      <div class="bodyRateStandard">
-        <span>體指率標準: </span>
-        <input type="text" id="bodyRateStandard" name="" readonly="true">
+    <div class="quote lean-bg-top-left">
+      <div class="container">
+        <div class="icon">
+          <div class="fas fa-quote-right"></div>
+        </div>
+        <p>I want to be a professional fron-end engineer</p>
+        <p>I am a fresh man in work</p><a href="#">Sonebody-</a><span> for everyone</span>
       </div>
     </div>
-
-    <div class="containerButton">
-      <div class="calculator">
-        <button type="button" id="calc"><span>計算 </span></button>
-      </div>
-      <div class="blank">
-        <button type="button" id="empty"><span>清空 </span></button>
+    <div class="skill lean-bg-bottom-left" id="skillPage">
+      <div class="container">
+        <h2 class="wow bounceInLeft">skill</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card wow bounceInLeft">
+              <div class="cardIcon"><img src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/22-512.png" alt=""/></div>
+              <div class="cardInner">
+                <h4>HTML</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu  </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card wow bounceInLeft">
+              <div class="cardIcon"><img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" alt=""/></div>
+              <div class="cardInner">
+                <h4>Css</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card wow bounceInRight">
+              <div class="cardIcon"><img src="https://www.sketch.com/images/pages/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png" alt=""/></div>
+              <div class="cardInner">
+                <h4>Sketch</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card wow bounceInRight">
+              <div class="cardIcon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/788px-Adobe_Illustrator_CC_icon.svg.png" alt=""/></div>
+              <div class="cardInner">
+                <h4>Ai</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu  </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="experience" id="ExperiencePage">
+      <div class="container">
+        <h2 class="wow bounceInLeft">Experience</h2>
+        <div class="timeline-group"> 
+          <div class="timeline"></div>
+          <div class="timecard-left timecard-one wow bounceInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin lacus lobortis, dapibus est id, rhoncus sem. Vivamus eu lorem quis lectus volutpat laoreet eget sed enim. Quisque ullamcorper maximus neque, id ullamcorper </div>
+          <div class="timecard-right timecard-two wow bounceInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin lacus lobortis, dapibus est id, rhoncus sem. Vivamus eu lorem quis lectus volutpat laoreet eget sed enim. Quisque ullamcorper maximus neque, id ullamcorper </div>
+          <div class="timecard-left timecard-three wow bounceInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin lacus lobortis, dapibus est id, rhoncus sem. Vivamus eu lorem quis lectus volutpat laoreet eget sed enim. Quisque ullamcorper maximus neque, id ullamcorper </div>
+          <div class="timecard-right timecard-four wow bounceInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin lacus lobortis, dapibus est id, rhoncus sem. Vivamus eu lorem quis lectus volutpat laoreet eget sed enim. Quisque ullamcorper maximus neque, id ullamcorper </div>
+        </div>
+      </div>
+    </div>
+    <div class="work lean-bg-top-right" id="WorksPage">
+      <div class="container">
+        <h2 class="wow bounceInLeft">My Works
+          <div class="work-list">
+            <div class="work-item">
+              <div class="row wow bounceInRight">
+                <div class="col-sm-6 imgBox"><a href="https://media.bnextmedia.com.tw/image/album/2017-03/img-1490092566-58593.jpg" data-fancybox="data-fancybox">
+                    <div class="picBox">
+                      <div class="pic-inner pic-inner-resolution">
+                        <div class="pic pic1"></div>
+                      </div>
+                    </div></a></div>
+                <div class="col-sm-6 TextBox">
+                  <div class="text-left">
+                    <h3>Good design</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p><a class="line" href="#">Show project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row wow bounceInLeft">
+                <div class="col-sm-6 imgBox order-sm-2"><a href="http://img1.juimg.com/180103/330882-1P10303335738.jpg" data-fancybox="data-fancybox">
+                    <div class="picBox">
+                      <div class="pic-inner pic-inner-resolution">
+                        <div class="pic pic2"></div>
+                      </div>
+                    </div></a></div>
+                <div class="col-sm-6 TextBox order-sm-1">
+                  <div class="text-right">
+                    <h3>Ambition </h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p><a class="line" href="#">Show project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row wow bounceInRight">
+                <div class="col-sm-6 imgBox"><a href="https://namefaceselfless.files.wordpress.com/2018/09/brain.jpg?w=443&amp;h=274" data-fancybox="data-fancybox">
+                    <div class="picBox">
+                      <div class="pic-inner pic-inner-resolution">
+                        <div class="pic pic3"></div>
+                      </div>
+                    </div></a></div>
+                <div class="col-sm-6 TextBox">
+                  <div class="text-left">
+                    <h3>Imagination in motion</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p><a class="line" href="#">Show project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row wow bounceInLeft">
+                <div class="col-sm-6 imgBox order-sm-2"><a href="https://storage.googleapis.com/www-cw-com-tw/article/201907/article-5d36ac41377cf.jpg" data-fancybox="data-fancybox">
+                    <div class="picBox">
+                      <div class="pic-inner pic-inner-resolution">
+                        <div class="pic pic4"></div>
+                      </div>
+                    </div></a></div>
+                <div class="col-sm-6 TextBox order-sm-1">
+                  <div class="text-right">
+                    <h3>Future develope</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p><a class="line" href="#">Show project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="btn moreBtn wow jello">More Works</div>
+            </div>
+          </div>
+        </h2>
+      </div>
+    </div>
+    <div class="contact lean-bg-bottom-right" id="ContactPage">
+      <div class="container">
+        <h2 class="wow bounceInRight">CONTACT</h2>
+        <form class="form wow fadeInUp" action="">
+          <form-group class="form-group">
+            <div class="row">
+              <div class="col-sm-12">
+                <label for="name">Name</label>
+                <input class="form-control" id="name"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 phone">
+                <label for="tel">Phone</label>
+                <input class="form-control" id="tel" type="tel"/>
+              </div>
+              <div class="col-sm-6 email">
+                <label for="email">Email</label>
+                <input class="form-control" id="email" type="email"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 message">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 submit">
+                <input class="btn sendBtn wow heartBeat" type="submit" value="Send"/>
+              </div>
+            </div>
+          </form-group>
+        </form>
+        <div class="bottomInfo">
+          <div class="or"><span> OR</span></div>
+          <div class="info"><span class="mail">like4628@yahoo.com.tw</span><span class="tel"> 0925307312</span></div>
+          <div class="infoIcon"><a href="https://line.me/ti/p/aJVH0cDKSp" target="_blank"><i class="fab fa-line"> </i></a><a href="https://www.facebook.com/profile.php?id=100003999642145" target="_blank"><i class="fab fa-facebook-square"></i></a><a href="https://www.instagram.com/shaiya_chen/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="finaltext">
+          <p class="par">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quaerat ut reprehenderit magni ea veritatis quidem voluptatibus porro nostrum. Alias tenetur beatae quia aperiam culpa </p>
+          <p class="copy">CopyRight @2019 Web Design by Nash</p>
+        </div>
+      </div>
+    </footer>
   </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.js'></script><script  src="./script.js"></script>
 
 </body>
-
 </html>
