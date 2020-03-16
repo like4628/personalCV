@@ -19,7 +19,7 @@
   <div class="header jsHeader">
     <div class="container">
       <div class="navbar">
-        <div class="left"><a class="fab fa-facebook-square" href="https://www.facebook.com/profile.php?id=100003999642145" target="_blank"></a><a class="fab fa-line" href="https://line.me/ti/p/aJVH0cDKSp" target="_blank"></a><a class="fab fa-dribbble" href="https://www.instagram.com/shaiya_chen/" target="_blank"></a></div>
+        <div class="left"><a class="fab fa-facebook-square" href="https://www.facebook.com/profile.php?id=100003999642145" target="_blank"></a><a class="fab fa-line" href="https://line.me/ti/p/aJVH0cDKSp" target="_blank"></a><a class="fab fa-github-square" href="https://github.com/like4628?tab=repositories" target="_blank"></a><a class="fab fa-youtube-square" href="https://www.youtube.com/channel/UC463NgYamrU0YDScH3VjIGQ/" target="_blank"></a></div>
         <div class="right"><a class="menu" href="#response">
             <div class="bar bar1"></div>
             <div class="bar bar2"></div>
@@ -29,11 +29,11 @@
                 <div class="bar bar4"></div>
                 <div class="bar bar5"></div></a>
               <ul class="ulmenu">
-                <li><a class="responseList" href="#topPage">Home</a></li>
-                <li><a class="responseList" href="#skillPage">Skill</a></li>
-                <li><a class="responseList" href="#ExperiencePage">Experience</a></li>
-                <li><a class="responseList" href="#WorksPage">My Works</a></li>
-                <li><a class="responseList" href="#ContactPage">Contact</a></li>
+                <li><a class="responseList" id="home" href="#topPage">Home</a></li>
+                <li><a class="responseList" id="skill" href="#skillPage">Skill</a></li>
+                <li><a class="responseList" id="experience" href="#ExperiencePage">Experience</a></li>
+                <li><a class="responseList" id="myworks" href="#WorksPage">My Works</a></li>
+                <li><a class="responseList" id="email" href="#emailPage">Email</a></li>
               </ul>
             </div>
           </div>
@@ -46,8 +46,8 @@
       <div class="container">
         <div class="intro-bg"></div>
         <div class="title wow rubberBand">
-          <h1>I'AM Nash</h1>
-          <div class="btn">Contact</div>
+          <h1>I'AM Nash</h1><a id="btn" href="#contact_bottom">
+            <div class="btn">Contact</div></a>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
     </div>
     <div class="skill lean-bg-bottom-left" id="skillPage">
       <div class="container">
-        <h2 class="wow bounceInLeft">skill</h2>
+        <h2 class="wow bounceInLeft">Skill</h2>
         <div class="row">
           <div class="col-sm-6">
             <div class="card wow bounceInLeft">
@@ -184,7 +184,7 @@
         </h2>
       </div>
     </div>
-    <div class="contact lean-bg-bottom-right" id="ContactPage">
+    <div class="contact lean-bg-bottom-right" id="emailPage">
       <div class="container">
         <h2 class="wow bounceInRight">CONTACT</h2>
         <form class="form wow fadeInUp" action="">
@@ -225,7 +225,7 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
+    <footer class="footer" id="contact_bottom">
       <div class="container">
         <div class="finaltext">
           <p class="par">一個熱愛設計以及對於視覺特效有一些想法的人，想把視覺以及震撼的內容傳達給使用者</p>

@@ -18,3 +18,35 @@ new WOW().init();
 $("[data-fancybox]").fancybox({
     loop: true
 });
+
+//scrolltop網頁緩慢滑動
+
+$('#btn').click(function(){
+  $('html,body').animate(
+    {scrollTop:$('#contact_bottom').offset().top}, 2000);
+}); //代表一個完整的執行區塊
+
+$('#home').click(function(){
+  $('html,body').animate(
+    {scrollTop:$('#topPage').offset().top}, 500);
+}); //代表一個完整的執行區塊
+
+$('#skill').click(function(){
+  $('html,body').animate(
+    {scrollTop:$('#skillPage').offset().top}, 500);
+}); //代表一個完整的執行區塊
+
+$('#experience').click(function(){
+  $('html,body').animate(
+    {scrollTop:$('#ExperiencePage').offset().top}, 500);
+}); //代表一個完整的執行區塊
+
+$('#myworks').click(function(){
+  $('html,body').animate(
+    {scrollTop:$('#WorksPage').offset().top}, 500);
+}); //代表一個完整的執行區塊
+
+$('#email').click(function(){
+  $('html,body').animate(
+    {scrollTop:$('#emailPage').offset().top}, 500);
+}); //代表一個完整的執行區塊

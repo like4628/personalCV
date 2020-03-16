@@ -22,6 +22,8 @@
   border: 1px solid #fff;
   padding: 15px;
   color: #fff;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -258,6 +260,9 @@ ul {
 .header .navbar .responseMenu:target .ulmenu .responseList {
   font-size: 40px;
 }
+.header .navbar .responseMenu:target .ulmenu .responseList:hover {
+  color: #e881a7;
+}
 
 .headerTransparent {
   background-color: #fff;
@@ -288,7 +293,7 @@ ul {
   color: #fff;
 }
 .main .btn {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 20px;
 }
 .main .btn:hover {
@@ -331,6 +336,7 @@ ul {
   padding-bottom: 40px;
 }
 .main .skill .card {
+  padding: 10px 20px;
   margin-top: 10px;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(232, 129, 167, 0.5);
@@ -339,8 +345,8 @@ ul {
 .main .skill .card .cardIcon img {
   max-width: 64px;
   position: absolute;
-  top: 80px;
-  left: -2px;
+  top: 100px;
+  left: -10px;
   padding: 10px;
 }
 .main .skill .card .cardInner {
@@ -352,6 +358,7 @@ ul {
   padding-left: 32px;
 }
 .main .skill .card .cardInner p {
+  text-align: left;
   padding-right: 10px;
   margin-top: 12px;
   width: calc(100% -60px);
@@ -384,7 +391,7 @@ ul {
   max-height: calc(25% - 24px);
   margin-bottom: 70px;
   padding: 24px;
-  background: linear-gradient(-45deg, #FEE140 0%, #FA709A 100%);
+  background: linear-gradient(-45deg, #FFAFBD 20%, #ffc3a0 100%);
   opacity: 0.9;
   border-radius: 20px;
 }
@@ -408,7 +415,7 @@ ul {
   max-height: calc(25% - 24px);
   margin-bottom: 70px;
   padding: 24px;
-  background: linear-gradient(-45deg, #FEE140 0%, #FA709A 100%);
+  background: linear-gradient(-45deg, #FFAFBD 20%, #ffc3a0 100%);
   opacity: 0.9;
   border-radius: 20px;
 }
