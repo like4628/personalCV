@@ -352,8 +352,9 @@ ul {
   padding-left: 32px;
 }
 .main .skill .card .cardInner p {
+  padding-right: 10px;
   margin-top: 12px;
-  width: calc(100% -50px);
+  width: calc(100% -60px);
 }
 .main .experience {
   padding-top: 80px;
@@ -383,8 +384,9 @@ ul {
   max-height: calc(25% - 24px);
   margin-bottom: 70px;
   padding: 24px;
-  background-color: #e881a7;
+  background: linear-gradient(-45deg, #FEE140 0%, #FA709A 100%);
   opacity: 0.9;
+  border-radius: 20px;
 }
 .main .experience .timeline-group .timecard-left:after {
   content: "";
@@ -406,8 +408,9 @@ ul {
   max-height: calc(25% - 24px);
   margin-bottom: 70px;
   padding: 24px;
-  background-color: #e881a7;
+  background: linear-gradient(-45deg, #FEE140 0%, #FA709A 100%);
   opacity: 0.9;
+  border-radius: 20px;
 }
 .main .experience .timeline-group .timecard-right:before {
   content: "";
@@ -470,13 +473,11 @@ ul {
   padding-top: 50px;
   max-width: 500px;
 }
-.main .work .work-item .TextBox .text-right {
-  text-align: right;
-}
 .main .work .work-item .TextBox .text-right h3 {
   color: #444;
 }
 .main .work .work-item .TextBox .text-right p {
+  text-align: left;
   padding-left: 0;
   color: #333;
 }
@@ -695,7 +696,6 @@ ul {
   }
   .main .experience .timeline-group .timecard-left {
     width: calc( 100% - 24px );
-    height: calc( 100% - 24px);
     margin-left: 24px;
   }
   .main .experience .timeline-group .timecard-left:after {
