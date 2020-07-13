@@ -345,7 +345,7 @@ ul {
 .main .skill .card .cardIcon img {
   max-width: 64px;
   position: absolute;
-  top: 100px;
+  top: 75px;
   left: -10px;
   padding: 10px;
 }
@@ -465,16 +465,16 @@ ul {
   background-position: center;
 }
 .main .work .work-item .imgBox .picBox .pic-inner-resolution .pic1 {
-  background-image: url(https://media.bnextmedia.com.tw/image/album/2017-03/img-1490092566-58593.jpg);
+  background-image: url(https://i.imgur.com/vh6mLFX.png?1);
 }
 .main .work .work-item .imgBox .picBox .pic-inner-resolution .pic2 {
-  background-image: url(http://img1.juimg.com/180103/330882-1P10303335738.jpg);
+  background-image: url(https://i.imgur.com/W0Uei37.png);
 }
 .main .work .work-item .imgBox .picBox .pic-inner-resolution .pic3 {
-  background-image: url(https://namefaceselfless.files.wordpress.com/2018/09/brain.jpg?w=443&h=274);
+  background-image: url(https://i.imgur.com/ELWKNvc.png);
 }
 .main .work .work-item .imgBox .picBox .pic-inner-resolution .pic4 {
-  background-image: url(https://storage.googleapis.com/www-cw-com-tw/article/201907/article-5d36ac41377cf.jpg);
+  background-image: url(https://i.imgur.com/5v8IKHn.png);
 }
 .main .work .work-item .TextBox {
   padding-top: 50px;
@@ -684,36 +684,40 @@ ul {
     margin-left: 30px;
   }
   .main .quote .container {
-    padding-top: 40px;
-    padding-bottom: 0px;
+    padding-top: 2px;
+    padding-bottom: 1px;
   }
   .main .skill {
-    padding-top: 50px;
+    padding-top: 70px;
   }
+  .main .skill .card .cardIcon img {
+    top: 100px;
+  }
+
   .main .experience {
     padding-top: 40px;
   }
   .main .experience .timeline-group {
     padding-bottom: 80px;
     padding-left: 10px;
-    height: 1000px;
+    height: 750px;
   }
   .main .experience .timeline-group .timeline {
-    left: 3%;
+    left: 15px;
   }
   .main .experience .timeline-group .timecard-left {
     width: calc( 100% - 24px );
     margin-left: 24px;
   }
   .main .experience .timeline-group .timecard-left:after {
-    left: -31px;
+    left: -27.5px;
   }
   .main .experience .timeline-group .timecard-right {
     width: calc( 100% - 24px );
     margin-left: 24px;
   }
   .main .experience .timeline-group .timecard-right:before {
-    right: 32px;
+    left: -27.5px;
   }
   .main .experience .timeline-group .timecard-four {
     margin-bottom: 0;
@@ -732,4 +736,12 @@ ul {
   .main .contact {
     padding-top: 80px;
   }
+}
+
+
+@media (max-width: 576px) {
+  .main .experience .timeline-group .timeline {
+    left: 16px;
+  }
+
 }
