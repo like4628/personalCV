@@ -50,3 +50,9 @@ $('#email').click(function(){
   $('html,body').animate(
     {scrollTop:$('#emailPage').offset().top}, 500);
 }); //代表一個完整的執行區塊
+
+
+//聯絡
+$('.sendBtn').click(function(){
+  alert('此按鈕裝飾用，請聯絡下面信箱')
+})
