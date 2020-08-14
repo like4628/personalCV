@@ -21,7 +21,10 @@ $('document').ready(function(){
   duration: 1000,
   })
 
+  //skroll js animation
+  var s = skrollr.init()
 
+  
   //fancyBox 3.0 如果是3.1以上的版本不能使用position:relative 
   //要去修改裡面為position:fixed
   $("[data-fancybox]").fancybox({

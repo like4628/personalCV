@@ -103,7 +103,14 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+.progress{
+  position: fixed;
+  top: 57px;
+  left: 0;
+  height: 5px;
+  border-radius: 10px;
+  z-index: 200;
+}
 .bg {
   position: fixed;
   left: 0;
@@ -266,7 +273,7 @@ ul {
 
 .headerTransparent {
   background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 .headerTransparent .left .fab {
   color: #e881a7;
@@ -653,6 +660,10 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .progress{
+    top: 55px;
+    height: 2px;
+  }
   .navbar {
     margin-top: 10px;
   }
