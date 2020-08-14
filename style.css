@@ -103,8 +103,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 .progress{
-  position: absolute;
+  position: fixed;
   top: 57px;
   left: 0;
   height: 5px;
