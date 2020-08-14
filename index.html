@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - 個人CV</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon"
     href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png"
@@ -18,8 +18,10 @@
 
 </head>
 
-<body >
+<body>
   <!-- partial:index.partial.html -->
+
+  <div class="progress"></div>
   <div class="wrapper">
     <div class="bg"></div>
     <div class="header jsHeader">
@@ -53,17 +55,7 @@
           </div>
         </div>
       </div>
-      <div id="skrollor-body">
-        <!-- //progress pink  skroll.js-->
-        <div class="progress" data-0="width:0%;background:#c87db4" data-end="width:100%;" class=""></div>
-      </div>
-        
 
-
-        
-      
-      
-      
     </div>
     <div class="main">
       <div class="intro" id="topPage">
@@ -104,8 +96,8 @@
             <div class="col-sm-6">
               <div data-aos="fade-left">
                 <div class="card">
-                  <div class="cardIcon"><img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png"
-                      alt="" /></div>
+                  <div class="cardIcon"><img
+                      src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" alt="" /></div>
                   <div class="cardInner">
                     <h4>Css</h4>
                     <p>使用過格線系統，Bootstrap , ElementUI。對於整體網頁的美化以及排版，位置規劃還有互動特效效果，字體、字型間距也有一定的了解。</p>
@@ -126,13 +118,14 @@
                     <p>可以自己設計常用icon以及各裝置所需要的排版原型，產出Wireframe，並與其他設計師討論修改合作，也可以製作流程圖來表達目前的設計目的。</p>
                   </div>
                 </div>
-            </div>
+              </div>
             </div>
             <div class="col-sm-6">
               <div data-aos="fade-left">
                 <div class="card">
                   <div class="cardIcon"><img
-                      src="https://i.pinimg.com/originals/a5/58/b4/a558b426cb8973523f37bbed94cf0f09.png" alt="" /></div>
+                      src="https://i.pinimg.com/originals/a5/58/b4/a558b426cb8973523f37bbed94cf0f09.png" alt="" />
+                  </div>
                   <div class="cardInner">
                     <h4>Figma</h4>
                     <p>利用Figma製作原型以及初期稿子設計，Wireframe 和 UI Design，規格表交付以及與其他設計師協作，為產品減少溝通成本。</p>
@@ -171,7 +164,7 @@
           </div>
         </div>
       </div>
-      //Experience
+      <!-- //Experience -->
       <div class="experience" id="ExperiencePage">
         <div class="container">
           <h2 class="wow bounceInLeft">Experience</h2>
@@ -185,14 +178,14 @@
               <div class="timecard-right timecard-two wow bounceInUp">
                 2018~2019，任職於鎂成實業股份有限公司，做系統安裝工程以及視聽媒體相關的工作，認識了影像、視訊、音訊、以及電影院規模的視聽工程，期間更認識到了整體系統架構流程還有設計使用例如:Mixer、Amplifier、PA等等。
               </div>
+            </div>
+            <div data-aos="zoom-in">
+              <div class="timecard-left timecard-three wow bounceInUp">
+                2017畢業，實習於安恩嘉公司擔任產品測試工程師，協助設備檢測以及QA，學習了一些網路知識，對於網路有基本了解認識，也學習到了攝影機整體的製造還有類別。</div>
+              <div class="timecard-right timecard-four wow bounceInUp">2013~2016 就讀於台北科技大學
+                電子工程系，在校學習是積體電路等等方面電路知識，以及參加一些專題競賽，還有協助網頁產出。 </div>
+            </div>
           </div>
-          <div data-aos="zoom-in">
-            <div class="timecard-left timecard-three wow bounceInUp">
-              2017畢業，實習於安恩嘉公司擔任產品測試工程師，協助設備檢測以及QA，學習了一些網路知識，對於網路有基本了解認識，也學習到了攝影機整體的製造還有類別。</div>
-            <div class="timecard-right timecard-four wow bounceInUp">2013~2016 就讀於台北科技大學
-              電子工程系，在校學習是積體電路等等方面電路知識，以及參加一些專題競賽，還有協助網頁產出。 </div>
-          </div>
-        </div>
         </div>
       </div>
       <div class="work lean-bg-top-right" id="WorksPage">
@@ -312,7 +305,8 @@
           </form>
           <div class="bottomInfo">
             <div class="or"><span> OR</span></div>
-            <div class="info"><span class="mail">t102332026@ntut.org.tw</span><span class="tel"> 0925307312</span></div>
+            <div class="info"><span class="mail">t102332026@ntut.org.tw</span><span class="tel"> 0925307312</span>
+            </div>
             <div class="infoIcon"><a href="https://line.me/ti/p/aJVH0cDKSp" target="_blank"><i class="fab fa-line">
                 </i></a><a href="https://www.facebook.com/profile.php?id=100003999642145" target="_blank"><i
                   class="fab fa-facebook-square"></i></a><a href="https://www.instagram.com/shaiya_chen/"
@@ -331,10 +325,12 @@
     </div>
   </div>
 
+
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js'></script>
+  <script src="http://repo.bfw.wiki/bfwrepo/js/bfwone.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.js'></script>
   <script src="./script.js"></script>

@@ -103,13 +103,13 @@ ul {
   margin: 0;
   padding: 0;
 }
-#skrollor-body .progress{
-  position: absolute;
-  top: 57px;
+.progress{
+  position: fixed;
   left: 0;
+  top: 57px;
   height: 5px;
-  border-radius: 10px;
-  z-index: 200;
+  z-index: 100;
+  background-color: #c87db4;
 }
 .bg {
   position: fixed;
