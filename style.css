@@ -348,12 +348,12 @@ ul {
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(232, 129, 167, 0.5);
   margin-bottom: 20px;
-  height: 200px;
+  height: 280px;
 }
 .main .skill .card .cardIcon img {
   max-width: 64px;
   position: absolute;
-  top: 75px;
+  top: 120px;
   left: -10px;
   padding: 10px;
 }
@@ -665,6 +665,9 @@ ul {
   .main .skill .card {
     height: 250px;
   }
+  .main .skill .card .cardIcon img {
+    top: 80px;
+  }
   
 
 }
@@ -713,7 +716,7 @@ ul {
     padding-top: 70px;
   }
   .main .skill .card {
-    height: 300px;
+    height: 420px;
   }
   .main .skill .card .cardIcon img {
     top: 100px;
@@ -770,7 +773,9 @@ ul {
     left: 16px;
   }
   .main .skill .card {
-    height: 280px;
+    height: 230px;
   }
-
+  .main .skill .card .cardIcon img {
+    top: 85px;
+  }
 }
