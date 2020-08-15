@@ -348,6 +348,7 @@ ul {
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(232, 129, 167, 0.5);
   margin-bottom: 20px;
+  height: 200px;
 }
 .main .skill .card .cardIcon img {
   max-width: 64px;
@@ -659,6 +660,14 @@ ul {
   color: #fff;
 }
 
+
+@media (min-width: 992px) {
+  .main .skill .card {
+    height: 250px;
+  }
+  
+
+}
 @media (max-width: 768px) {
   .progress{
     top: 55px;
@@ -702,6 +711,9 @@ ul {
   }
   .main .skill {
     padding-top: 70px;
+  }
+  .main .skill .card {
+    height: 300px;
   }
   .main .skill .card .cardIcon img {
     top: 100px;
@@ -756,6 +768,9 @@ ul {
 @media (max-width: 576px) {
   .main .experience .timeline-group .timeline {
     left: 16px;
+  }
+  .main .skill .card {
+    height: 280px;
   }
 
 }
