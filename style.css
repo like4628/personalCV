@@ -755,7 +755,7 @@ ul {
     padding-top: 70px;
   }
   .main .skill .card {
-    height: 420px;
+    height: 300px;
   }
   .main .skill .card .cardIcon img {
     top: 100px;
@@ -812,9 +812,20 @@ ul {
     left: 16px;
   }
   .main .skill .card {
-    height: 230px;
+    height: 270px;
   }
   .main .skill .card .cardIcon img {
     top: 85px;
+  }
+}
+
+@media (max-width:320px){
+  .main .skill .card {
+    height: 320px;
+  }
+}
+@media (max-width:280px){
+  .main .skill .card {
+    height: 390px;
   }
 }
