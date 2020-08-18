@@ -350,6 +350,39 @@ ul {
   margin-bottom: 20px;
   height: 280px;
 }
+/* card hover 上下線條(上) Start */
+.main .skill .card:after  {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 3px;
+  width: 0;
+  background-color: rgb(0, 217, 255);
+  transition: .5s;
+}
+.main .skill .card:hover:after  {
+  width: 100%;
+}
+/* card hover 上下線條(上) End */
+/* card hover 上下線條(下) Start */
+.main .skill .card:before  {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color:  rgb(183, 0, 255);
+ 
+  transition: .5s;
+}
+.main .skill .card:hover:before  {
+  width: 100%;
+}
+
+/* card hover 上下線條(下) End */
+
 .main .skill .card .cardIcon img {
   max-width: 64px;
   position: absolute;
@@ -361,6 +394,7 @@ ul {
   padding-left: 32px;
   width: calc(100% -32px);
 }
+
 .main .skill .card .cardInner h4 {
   margin-bottom: 0;
   padding-left: 32px;
@@ -469,8 +503,13 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-size: 147%;
   background-position: center;
+  transition: .5s;
+}
+.main .work .work-item .imgBox .picBox .pic-inner-resolution .pic:hover{
+  background-size: 170%;
+  transition: .5s;
 }
 .main .work .work-item .imgBox .picBox .pic-inner-resolution .pic1 {
   background-image: url(https://i.imgur.com/vh6mLFX.png?1);
