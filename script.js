@@ -24,10 +24,10 @@ $('document').ready(function () {
       let pageHeight = document.body.scrollHeight || document.documentElement.scrollHeight; // 頁面高度
       let windowHeight = document.documentElement.clientHeight || document.body.clientHeight; // 瀏覽器高度
       let scrollAvail = pageHeight - windowHeight; // 滾動高度
-      // console.log('可滚动的高度：', scrollAvail);
+      // console.log('可滾動的高度：', scrollAvail);
       window.onscroll = function () {
-        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop; // 滾動調高度
-        console.log('滾動條高度', scrollTop);
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop; // 滾動條高度
+        // console.log('滾動條高度', scrollTop);
         document.querySelector('.progress').style.width = (scrollTop / scrollAvail) * 100 + '%'; // 進度條比例
       };
     }
