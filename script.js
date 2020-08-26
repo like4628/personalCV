@@ -7,8 +7,7 @@ $('document').ready(function () {
 
     if (scrollDistance > 50) {
       $header.addClass("headerTransparent");
-    }
-    else {
+    } else {
       $header.removeClass("headerTransparent")
     }
   })
@@ -22,16 +21,16 @@ $('document').ready(function () {
 
   //滾動進度條
   (function () {
-    let pageHeight = document.body.scrollHeight || document.documentElement.scrollHeight; // 页面总高度
-    let windowHeight = document.documentElement.clientHeight || document.body.clientHeight; // 浏览器视口高度
-    let scrollAvail = pageHeight - windowHeight; // 可滚动的高度
-    // console.log('可滚动的高度：', scrollAvail);
-    window.onscroll = function () {
-      let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;  // 获取滚动条的高度
-      console.log('滚动条的高度：', scrollTop);
-      document.querySelector('.progress').style.width = (scrollTop / scrollAvail) * 100 + '%';    // 计算占比
-    };
-  }
+      let pageHeight = document.body.scrollHeight || document.documentElement.scrollHeight; // 頁面高度
+      let windowHeight = document.documentElement.clientHeight || document.body.clientHeight; // 瀏覽器高度
+      let scrollAvail = pageHeight - windowHeight; // 滾動高度
+      // console.log('可滚动的高度：', scrollAvail);
+      window.onscroll = function () {
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop; // 滾動調高度
+        console.log('滾動條高度', scrollTop);
+        document.querySelector('.progress').style.width = (scrollTop / scrollAvail) * 100 + '%'; // 進度條比例
+      };
+    }
     ());
 
   //Aos js animation
@@ -52,39 +51,60 @@ $('document').ready(function () {
   //scrolltop網頁緩慢滑動
 
   $('#btn').click(function () {
-    $('html,body').animate(
-      { scrollTop: $('#contact_bottom').offset().top }, 2000);
+    $('html,body').animate({
+      scrollTop: $('#contact_bottom').offset().top
+    }, 2000);
   }); //代表一個完整的執行區塊
 
   $('#home').click(function () {
-    $('html,body').animate(
-      { scrollTop: $('#topPage').offset().top }, 500);
+    $('html,body').animate({
+      scrollTop: $('#topPage').offset().top
+    }, 500);
   }); //代表一個完整的執行區塊
 
   $('#skill').click(function () {
-    $('html,body').animate(
-      { scrollTop: $('#skillPage').offset().top }, 500);
+    $('html,body').animate({
+      scrollTop: $('#skillPage').offset().top
+    }, 500);
   }); //代表一個完整的執行區塊
 
   $('#experience').click(function () {
-    $('html,body').animate(
-      { scrollTop: $('#ExperiencePage').offset().top }, 500);
+    $('html,body').animate({
+      scrollTop: $('#ExperiencePage').offset().top
+    }, 500);
   }); //代表一個完整的執行區塊
 
   $('#myworks').click(function () {
-    $('html,body').animate(
-      { scrollTop: $('#WorksPage').offset().top }, 500);
+    $('html,body').animate({
+      scrollTop: $('#WorksPage').offset().top
+    }, 500);
   }); //代表一個完整的執行區塊
 
   $('#email').click(function () {
-    $('html,body').animate(
-      { scrollTop: $('#emailPage').offset().top }, 500);
+    $('html,body').animate({
+      scrollTop: $('#emailPage').offset().top
+    }, 500);
   }); //代表一個完整的執行區塊
 
 
   //聯絡
-  $('.sendBtn').click(function () {
-    alert('此按鈕裝飾用，請聯絡下面信箱')
+  $('.sendBtn').click(function (event) {
+
+    event.preventDefault;
+    console.log('cccc')
+    //sweetAlert2
+    Swal.fire({
+      icon: 'success',
+      title: '請聯絡下面信箱',
+      text: 't102332026@ntut.org.tw',
+      // footer: '<label>Email:  t102332026@ntut.org.tw</label>'
+
+    })
   })
+
+
+
+
+
 
 })
