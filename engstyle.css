@@ -6,6 +6,7 @@
   font-family: 微軟正黑體;
   margin: 0;
   padding: 0;
+
 }
 
 .poFixed {
@@ -114,7 +115,6 @@ ul {
   position: fixed;
   left: 0;
   top: 57px;
-  width: 200px;
   height: 5px;
   z-index: 100;
   background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
@@ -230,17 +230,20 @@ ul {
 .header .navbar .fab:hover {
   transform: translateY(-10%);
 }
-.header .navbar .right{
+
+.header .navbar .right {
   display: flex;
 }
-.header .navbar .right .languageChange{
-  color:#fff;
+
+.header .navbar .right .languageChange {
+  color: #fff;
   margin-right: 20px;
   transition: .3s;
   font-size: 18px;
   line-height: 20px;
 }
-.header .navbar .right .languageChange:hover{
+
+.header .navbar .right .languageChange:hover {
   transform: translateY(-20%);
 }
 
@@ -329,9 +332,11 @@ ul {
 .headerTransparent .left .fab {
   color: #e881a7;
 }
-.headerTransparent .right .languageChange{
-  color:#e881a7 !important;
+
+.headerTransparent .right .languageChange {
+  color: #e881a7 !important;
 }
+
 .headerTransparent .right .menu .bar {
   background-color: #e881a7 !important;
 }
@@ -421,6 +426,7 @@ ul {
   box-shadow: 0 2px 5px rgba(232, 129, 167, 0.5);
   margin-bottom: 20px;
   height: 280px;
+
 }
 
 /* card hover 上下線條(上) Start */
@@ -482,6 +488,8 @@ ul {
   padding-right: 10px;
   margin-top: 12px;
   width: calc(100% -60px);
+  text-align: justify;
+  text-justify: distribute;
 }
 
 .main .experience {
@@ -497,6 +505,8 @@ ul {
   max-width: 1100px;
   height: 900px;
   margin: 80px auto;
+  text-align: justify;
+  text-justify: distribute;
 }
 
 .main .experience .timeline-group .timeline {
@@ -635,8 +645,9 @@ ul {
 .main .work .work-item .TextBox .text-right p {
   text-align: left;
   padding-left: 0;
-  letter-spacing: 1px;
   color: #333;
+  text-align: justify;
+  text-justify: distribute;
 }
 
 .main .work .work-item .TextBox .text-right .line {
@@ -675,6 +686,8 @@ ul {
   padding-left: 0;
   letter-spacing: 1px;
   color: #333;
+  text-align: justify;
+  text-justify: distribute;
 }
 
 .main .work .work-item .TextBox .text-left .line {
@@ -844,7 +857,7 @@ ul {
   .main .skill .card .cardIcon img {
     top: 80px;
   }
-  
+
 
 
 }

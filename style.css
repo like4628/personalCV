@@ -114,7 +114,6 @@ ul {
   position: fixed;
   left: 0;
   top: 57px;
-  width: 200px;
   height: 5px;
   z-index: 100;
   background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
@@ -230,17 +229,20 @@ ul {
 .header .navbar .fab:hover {
   transform: translateY(-10%);
 }
-.header .navbar .right{
+
+.header .navbar .right {
   display: flex;
 }
-.header .navbar .right .languageChange{
-  color:#fff;
+
+.header .navbar .right .languageChange {
+  color: #fff;
   margin-right: 20px;
   transition: .3s;
   font-size: 18px;
   line-height: 20px;
 }
-.header .navbar .right .languageChange:hover{
+
+.header .navbar .right .languageChange:hover {
   transform: translateY(-20%);
 }
 
@@ -329,9 +331,11 @@ ul {
 .headerTransparent .left .fab {
   color: #e881a7;
 }
-.headerTransparent .right .languageChange{
-  color:#e881a7 !important;
+
+.headerTransparent .right .languageChange {
+  color: #e881a7 !important;
 }
+
 .headerTransparent .right .menu .bar {
   background-color: #e881a7 !important;
 }
@@ -482,6 +486,8 @@ ul {
   padding-right: 10px;
   margin-top: 12px;
   width: calc(100% -60px);
+  text-align: justify;
+  text-justify: distribute;
 }
 
 .main .experience {
@@ -519,6 +525,8 @@ ul {
   background: linear-gradient(-45deg, #FFAFBD 20%, #ffc3a0 100%);
   opacity: 0.9;
   border-radius: 20px;
+  text-align: justify;
+  text-justify: distribute;
 }
 
 .main .experience .timeline-group .timecard-left:after {
@@ -546,6 +554,8 @@ ul {
   background: linear-gradient(-45deg, #FFAFBD 20%, #ffc3a0 100%);
   opacity: 0.9;
   border-radius: 20px;
+  text-align: justify;
+  text-justify: distribute;
 }
 
 .main .experience .timeline-group .timecard-right:before {
@@ -637,6 +647,8 @@ ul {
   padding-left: 0;
   letter-spacing: 1px;
   color: #333;
+  text-align: justify;
+  text-justify: distribute;
 }
 
 .main .work .work-item .TextBox .text-right .line {
@@ -675,6 +687,8 @@ ul {
   padding-left: 0;
   letter-spacing: 1px;
   color: #333;
+  text-align: justify;
+  text-justify: distribute;
 }
 
 .main .work .work-item .TextBox .text-left .line {
