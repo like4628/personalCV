@@ -506,7 +506,7 @@ ul {
   height: 900px;
   margin: 80px auto;
   text-align: justify;
-  text-justify: distribute;
+  text-justify: auto;
 }
 
 .main .experience .timeline-group .timeline {

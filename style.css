@@ -688,7 +688,7 @@ ul {
   letter-spacing: 1px;
   color: #333;
   text-align: justify;
-  text-justify: distribute;
+  text-justify: auto;
 }
 
 .main .work .work-item .TextBox .text-left .line {
