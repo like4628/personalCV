@@ -8,6 +8,31 @@
   padding: 0;
 }
 
+/* 滾動條 */
+*::-webkit-scrollbar {
+  /*整體滾動條寬高*/
+  margin-right: 2px;
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  /*滾動條內部樣式*/
+  border-radius: 8px;
+  background: #e881a7;
+  
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  /*滾動條懸浮樣式*/
+  opacity: .5;
+}
+
+*::-webkit-scrollbar-track {
+  /*滾動條顏色*/
+  background: #fff;
+}
+
 .poFixed {
   position: fixed;
 }
