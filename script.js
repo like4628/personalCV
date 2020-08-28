@@ -88,8 +88,7 @@ $('document').ready(function () {
 
 
   //聯絡
-  $('.sendBtn').click(function (event) {
-
+  $('#sendBtn').click(function (event) {
     event.preventDefault;
     console.log('cccc')
     //sweetAlert2
