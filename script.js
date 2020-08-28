@@ -1,6 +1,14 @@
 $('document').ready(function () {
 
+//loading
+  setTimeout(() => {
+    $('.preload').fadeOut(2000)
+  }, 1500);
+  
+  $('.loading').delay(1500).fadeOut(200)
 
+
+//navBar show 
   $(window).on("scroll", function () {
     var scrollDistance = $(window).scrollTop();
     var $header = $(".jsHeader");
