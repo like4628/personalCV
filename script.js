@@ -97,7 +97,7 @@ $('document').ready(function () {
 
   //聯絡
   $('.sendBtn').click(function (event) {
-    event.preventDefault;
+    event.preventDefault();
     console.log('cccc')
     //sweetAlert2
     Swal.fire({
