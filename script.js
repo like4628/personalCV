@@ -112,13 +112,44 @@ $('document').ready(function () {
 
 //圖片過度
 new hoverEffect({
-  parent: document.querySelector('.distortion'),
+  parent: document.querySelector('.distortionCounter'),
   intensity: 0.2,
-  speedIn: 0.5,
+  speedIn: 1.5,
+  speedOut: 1,
+  image1: './asset/worksCounter.PNG',
+  image2: './asset/worksCounter2.PNG',
+  displacementImage: './asset/distortion.png',
+  imagesRatio: 1080 /1920
+});
+new hoverEffect({
+  parent: document.querySelector('.distortionEsports'),
+  intensity: 0.2,
+  speedIn: 1.5,
+  speedOut: 1,
+  image1: './asset/esprts.PNG',
+  image2: './asset/esprts2.PNG',
+  displacementImage: './asset/distortion.png',
+  imagesRatio: 1080 /1920
+});
+
+new hoverEffect({
+  parent: document.querySelector('.distortionCar'),
+  intensity: 0.2,
+  speedIn: 1.5,
+  speedOut: 1,
+  image1: './asset/superCar.PNG',
+  image2: './asset/superCar2.PNG',
+  displacementImage: './asset/distortion.png',
+  imagesRatio: 1080 /1920
+});
+new hoverEffect({
+  parent: document.querySelector('.distortionAE'),
+  intensity: 0.2,
+  speedIn: 1.5,
   speedOut: 1,
   image1: './asset/video.PNG',
   image2: './asset/youtube.png',
-  displacementImage: 'https://raw.githubusercontent.com/robin-dela/hover-effect/master/images/heightMap.png',
+  displacementImage: './asset/distortion.png',
   imagesRatio: 1080 /1920
 });
 
