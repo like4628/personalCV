@@ -110,8 +110,17 @@ $('document').ready(function () {
   })
 
 
-
-
+//圖片過度
+new hoverEffect({
+  parent: document.querySelector('.distortion'),
+  intensity: 0.2,
+  speedIn: 0.5,
+  speedOut: 1,
+  image1: './asset/video.PNG',
+  image2: './asset/youtube.png',
+  displacementImage: 'https://raw.githubusercontent.com/robin-dela/hover-effect/master/images/heightMap.png',
+  imagesRatio: 1080 /1920
+});
 
 
 })
