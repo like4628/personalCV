@@ -114,8 +114,6 @@ $('document').ready(function () {
 new hoverEffect({
   parent: document.querySelector('.distortionCounter'),
   intensity: 0.2,
-  speedIn: 1.5,
-  speedOut: 1,
   image1: './asset/worksCounter.PNG',
   image2: './asset/worksCounter2.PNG',
   displacementImage: './asset/distortion.png',
@@ -124,8 +122,6 @@ new hoverEffect({
 new hoverEffect({
   parent: document.querySelector('.distortionEsports'),
   intensity: 0.2,
-  speedIn: 1.5,
-  speedOut: 1,
   image1: './asset/esprts.PNG',
   image2: './asset/esprts2.PNG',
   displacementImage: './asset/distortion.png',
@@ -135,8 +131,6 @@ new hoverEffect({
 new hoverEffect({
   parent: document.querySelector('.distortionCar'),
   intensity: 0.2,
-  speedIn: 1.5,
-  speedOut: 1,
   image1: './asset/superCar.PNG',
   image2: './asset/superCar2.PNG',
   displacementImage: './asset/distortion.png',
@@ -145,8 +139,6 @@ new hoverEffect({
 new hoverEffect({
   parent: document.querySelector('.distortionAE'),
   intensity: 0.2,
-  speedIn: 1.5,
-  speedOut: 1,
   image1: './asset/video.PNG',
   image2: './asset/youtube.png',
   displacementImage: './asset/distortion.png',
