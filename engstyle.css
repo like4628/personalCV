@@ -1182,6 +1182,13 @@ ul {
     top: 100px;
   }
 
+  .main .skill .card .cardInner p {
+    word-spacing: 0;
+    letter-spacing: 0;
+    text-align: justify;
+
+  }
+
   .main .experience {
     padding-top: 40px;
   }
@@ -1199,6 +1206,7 @@ ul {
   .main .experience .timeline-group .timecard-left {
     width: calc(100% - 24px);
     margin-left: 24px;
+
 
   }
 
