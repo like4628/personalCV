@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* preset start */
 * {
   position: relative;
@@ -109,6 +110,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 /* preset end */
 
 /* sliderBar start */
@@ -123,7 +125,7 @@ ul {
   /*滾動條內部樣式*/
   border-radius: 8px;
   background: #e881a7;
-  
+
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -135,29 +137,32 @@ ul {
   /*滾動條顏色*/
   background: #fff;
 }
+
 /* sliderBar End */
 
 /* Loading start */
-.preload{
+.preload {
   position: absolute;
   z-index: 200;
   position: fixed;
   width: 100%;
   height: 100%;
 }
+
 .preload .loading {
   position: absolute;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   z-index: 100;
   background-color: #f1f1f1;
   width: 100%;
   height: 100%;
 }
+
 .preload .loading .wBall {
   position: absolute;
   width: 46px;
@@ -174,6 +179,7 @@ ul {
   -webkit-animation: orbit 3.0225s infinite;
   -moz-animation: orbit 3.0225s infinite;
 }
+
 .preload .loading .wBall .wInnerBall {
   position: absolute;
   width: 6px;
@@ -183,6 +189,7 @@ ul {
   top: 0px;
   border-radius: 6px;
 }
+
 .preload .loading #wBall_1 {
   animation-delay: 0.656s;
   -o-animation-delay: 0.656s;
@@ -190,6 +197,7 @@ ul {
   -webkit-animation-delay: 0.656s;
   -moz-animation-delay: 0.656s;
 }
+
 .preload .loading #wBall_2 {
   animation-delay: 0.133s;
   -o-animation-delay: 0.133s;
@@ -197,6 +205,7 @@ ul {
   -webkit-animation-delay: 0.133s;
   -moz-animation-delay: 0.133s;
 }
+
 .preload .loading #wBall_3 {
   animation-delay: 0.2665s;
   -o-animation-delay: 0.2665s;
@@ -204,6 +213,7 @@ ul {
   -webkit-animation-delay: 0.2665s;
   -moz-animation-delay: 0.2665s;
 }
+
 .preload .loading #wBall_4 {
   animation-delay: 0.3995s;
   -o-animation-delay: 0.3995s;
@@ -211,6 +221,7 @@ ul {
   -webkit-animation-delay: 0.3995s;
   -moz-animation-delay: 0.3995s;
 }
+
 .preload .loading #wBall_5 {
   animation-delay: 0.533s;
   -o-animation-delay: 0.533s;
@@ -224,61 +235,69 @@ ul {
     opacity: 1;
     z-index: 99;
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
+
   7% {
     opacity: 1;
     -webkit-transform: rotate(300deg);
-            transform: rotate(300deg);
+    transform: rotate(300deg);
     -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    animation-timing-function: linear;
     origin: 0%;
   }
+
   30% {
     opacity: 1;
     -webkit-transform: rotate(410deg);
-            transform: rotate(410deg);
+    transform: rotate(410deg);
     -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
     origin: 7%;
   }
+
   39% {
     opacity: 1;
     -webkit-transform: rotate(645deg);
-            transform: rotate(645deg);
+    transform: rotate(645deg);
     -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    animation-timing-function: linear;
     origin: 30%;
   }
+
   70% {
     opacity: 1;
     -webkit-transform: rotate(770deg);
-            transform: rotate(770deg);
+    transform: rotate(770deg);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
     origin: 39%;
   }
+
   75% {
     opacity: 1;
     -webkit-transform: rotate(900deg);
-            transform: rotate(900deg);
+    transform: rotate(900deg);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
     origin: 70%;
   }
+
   76% {
     opacity: 0;
     -webkit-transform: rotate(900deg);
-            transform: rotate(900deg);
+    transform: rotate(900deg);
   }
+
   100% {
     opacity: 0;
     -webkit-transform: rotate(900deg);
-            transform: rotate(900deg);
+    transform: rotate(900deg);
   }
 }
+
 @-webkit-keyframes orbit {
   0% {
     opacity: 1;
@@ -286,45 +305,53 @@ ul {
     -webkit-transform: rotate(180deg);
     -webkit-animation-timing-function: ease-out;
   }
+
   7% {
     opacity: 1;
     -webkit-transform: rotate(300deg);
     -webkit-animation-timing-function: linear;
     -webkit-origin: 0%;
   }
+
   30% {
     opacity: 1;
     -webkit-transform: rotate(410deg);
     -webkit-animation-timing-function: ease-in-out;
     -webkit-origin: 7%;
   }
+
   39% {
     opacity: 1;
     -webkit-transform: rotate(645deg);
     -webkit-animation-timing-function: linear;
     -webkit-origin: 30%;
   }
+
   70% {
     opacity: 1;
     -webkit-transform: rotate(770deg);
     -webkit-animation-timing-function: ease-out;
     -webkit-origin: 39%;
   }
+
   75% {
     opacity: 1;
     -webkit-transform: rotate(900deg);
     -webkit-animation-timing-function: ease-out;
     -webkit-origin: 70%;
   }
+
   76% {
     opacity: 0;
     -webkit-transform: rotate(900deg);
   }
+
   100% {
     opacity: 0;
     -webkit-transform: rotate(900deg);
   }
 }
+
 /* Loading end */
 
 .progress {
@@ -461,9 +488,11 @@ ul {
 .header .navbar .right .fa-language:hover {
   transform: translateY(-10%);
 }
-.header .navbar .right .menu{
+
+.header .navbar .right .menu {
   padding: 12px 15px;
 }
+
 .header .navbar .right .menu .bar {
   width: 32px;
   height: 4px;
@@ -553,9 +582,11 @@ ul {
 .headerTransparent .right .languageChange {
   color: #e881a7 !important;
 }
+
 .headerTransparent .right .languageChange .fa-language {
   color: #e881a7 !important;
 }
+
 .headerTransparent .right .menu .bar {
   background-color: #e881a7 !important;
 }
@@ -707,9 +738,10 @@ ul {
   padding-right: 10px;
   margin-top: 12px;
   width: calc(100% -60px);
-  /* text-align: justify; */
-  /* text-justify: distribute; */
+  text-align: justify;
+  text-justify: distribute;
   word-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 .main .experience {
@@ -867,7 +899,8 @@ ul {
   padding-left: 0;
   color: #333;
   text-align: justify;
-  /* text-justify: distribute; */
+  text-justify: distribute;
+  letter-spacing: 1;
 }
 
 .main .work .work-item .TextBox .text-right .line {
@@ -904,10 +937,10 @@ ul {
 
 .main .work .work-item .TextBox .text-left p {
   padding-left: 0;
-  letter-spacing: 1px;
   color: #333;
   text-align: justify;
   text-justify: distribute;
+  letter-spacing: 1;
 }
 
 .main .work .work-item .TextBox .text-left .line {
@@ -1100,9 +1133,11 @@ ul {
   .navbar .right {
     margin-top: 4px;
   }
-  .navbar .right .fa-language{
+
+  .navbar .right .fa-language {
     font-size: 25px ! important;
   }
+
   .navbar .right .menu .bar {
     width: 25px;
     margin-top: -1px;
