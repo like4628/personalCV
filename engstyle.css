@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #AB47BC;
+  color: #ab47bc;
 }
 
 h1 {
@@ -125,12 +125,11 @@ ul {
   /*滾動條內部樣式*/
   border-radius: 8px;
   background: #e881a7;
-
 }
 
 *::-webkit-scrollbar-thumb:hover {
   /*滾動條懸浮樣式*/
-  opacity: .5;
+  opacity: 0.5;
 }
 
 *::-webkit-scrollbar-track {
@@ -360,7 +359,16 @@ ul {
   top: 60px;
   height: 5px;
   z-index: 100;
-  background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+  background: linear-gradient(
+    90deg,
+    #ffd33d,
+    #ea4aaa 17%,
+    #b34bff 34%,
+    #01feff 51%,
+    #ffd33d 68%,
+    #ea4aaa 85%,
+    #b34bff
+  );
   background-size: 300% 100%;
   animation: progress-animation 2s linear infinite;
 }
@@ -480,7 +488,7 @@ ul {
 
 .header .navbar .right .fa-language {
   color: #fff;
-  transition: .3s;
+  transition: 0.3s;
   font-size: 32px;
   padding: 10px;
 }
@@ -616,15 +624,18 @@ ul {
   margin-top: 30px;
   margin-left: 20px;
   border: 5px solid;
-  border-image: linear-gradient(220deg, rgb(0, 217, 255) 0%, rgb(183, 0, 255) 100%);
+  border-image: linear-gradient(
+    220deg,
+    rgb(0, 217, 255) 0%,
+    rgb(183, 0, 255) 100%
+  );
   border-image-slice: 1;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .main .btn:hover {
   font-size: 20px;
   line-height: 15px;
-
 }
 
 .main .quote {
@@ -641,7 +652,7 @@ ul {
 }
 
 .main .quote .container .icon .fa-quote-right {
-  background-color: #EF5350;
+  background-color: #ef5350;
   width: 64px;
   height: 64px;
   border-radius: 100%;
@@ -655,7 +666,7 @@ ul {
 }
 
 .main .quote .container a {
-  color: #EC407A;
+  color: #ec407a;
 }
 
 .main .skill {
@@ -676,7 +687,6 @@ ul {
   box-shadow: 0 2px 5px rgba(232, 129, 167, 0.5);
   margin-bottom: 20px;
   height: 280px;
-
 }
 
 /* card hover 上下線條(上) Start */
@@ -688,7 +698,7 @@ ul {
   height: 3px;
   width: 0;
   background-color: rgb(0, 217, 255);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .main .skill .card:hover:after {
@@ -706,7 +716,7 @@ ul {
   width: 0;
   background-color: rgb(183, 0, 255);
 
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .main .skill .card:hover:before {
@@ -750,7 +760,7 @@ ul {
 }
 
 .main .experience h2 {
-  color: #FFF;
+  color: #fff;
 }
 
 .main .experience .timeline-group {
@@ -778,7 +788,7 @@ ul {
   max-height: calc(25% - 24px);
   margin-bottom: 70px;
   padding: 24px;
-  background: linear-gradient(-45deg, #FFAFBD 20%, #ffc3a0 100%);
+  background: linear-gradient(-45deg, #ffafbd 20%, #ffc3a0 100%);
   opacity: 0.9;
   border-radius: 20px;
 }
@@ -805,7 +815,7 @@ ul {
   max-height: calc(25% - 24px);
   margin-bottom: 70px;
   padding: 24px;
-  background: linear-gradient(-45deg, #FFAFBD 20%, #ffc3a0 100%);
+  background: linear-gradient(-45deg, #ffafbd 20%, #ffc3a0 100%);
   opacity: 0.9;
   border-radius: 20px;
 }
@@ -861,12 +871,12 @@ ul {
   height: 100%;
   /* background-size: 147%; */
   background-position: center;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .main .work .work-item .imgBox .picBox .pic-inner-resolution .pic:hover {
   /* background-size: 170%; */
-  transition: .5s;
+  transition: 0.5s;
 }
 
 /* .main .work .work-item .imgBox .picBox .pic-inner-resolution .pic1 {
@@ -905,7 +915,7 @@ ul {
 
 .main .work .work-item .TextBox .text-right .line {
   font-size: 20px;
-  color: #EC407A;
+  color: #ec407a;
   width: 0;
   transition: 0.5s;
   padding: 5px;
@@ -915,7 +925,7 @@ ul {
   content: "";
   display: block;
   position: absolute;
-  background-color: #EC407A;
+  background-color: #ec407a;
   bottom: 0;
   left: 0;
   width: 0%;
@@ -945,7 +955,7 @@ ul {
 
 .main .work .work-item .TextBox .text-left .line {
   font-size: 20px;
-  color: #EC407A;
+  color: #ec407a;
   width: 0;
   transition: 0.5s;
   padding: 5px;
@@ -955,7 +965,7 @@ ul {
   content: "";
   display: block;
   position: absolute;
-  background-color: #EC407A;
+  background-color: #ec407a;
   bottom: 0;
   left: 0;
   width: 0%;
@@ -991,7 +1001,7 @@ ul {
 }
 
 .main .contact h2 {
-  color: #FFF;
+  color: #fff;
 }
 
 .main .contact .form {
@@ -1101,7 +1111,6 @@ ul {
   color: #fff;
 }
 
-
 @media (min-width: 992px) {
   .main .skill .card {
     height: 250px;
@@ -1110,9 +1119,6 @@ ul {
   .main .skill .card .cardIcon img {
     top: 80px;
   }
-
-
-
 }
 
 @media (max-width: 768px) {
@@ -1135,7 +1141,7 @@ ul {
   }
 
   .navbar .right .fa-language {
-    font-size: 25px ! important;
+    font-size: 25px !important;
   }
 
   .navbar .right .menu .bar {
@@ -1186,7 +1192,6 @@ ul {
     word-spacing: 0;
     letter-spacing: 0;
     text-align: justify;
-
   }
 
   .main .experience {
@@ -1206,8 +1211,6 @@ ul {
   .main .experience .timeline-group .timecard-left {
     width: calc(100% - 24px);
     margin-left: 24px;
-
-
   }
 
   .main .experience .timeline-group .timecard-left:after {
@@ -1246,7 +1249,6 @@ ul {
   }
 }
 
-
 @media (max-width: 576px) {
   .main .experience .timeline-group .timeline {
     left: 16px;
@@ -1261,13 +1263,13 @@ ul {
   }
 }
 
-@media (max-width:320px) {
+@media (max-width: 320px) {
   .main .skill .card {
     height: 320px;
   }
 }
 
-@media (max-width:280px) {
+@media (max-width: 280px) {
   .main .skill .card {
     height: 390px;
   }
