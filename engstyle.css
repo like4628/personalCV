@@ -860,7 +860,7 @@ ul {
 }
 
 .main .work .work-item .imgBox .picBox .pic-inner-resolution {
-  padding-top: calc(100% * 3 / 4);
+  padding-top: calc(100% * 9 / 16);
 }
 
 .main .work .work-item .imgBox .picBox .pic-inner-resolution .pic {

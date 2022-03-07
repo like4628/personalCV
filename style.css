@@ -657,7 +657,7 @@ ul {
   height: 3px;
   width: 0;
   background-color: rgb(0, 217, 255);
-  transition: .5s;
+  transition: .9s;
 }
 
 .main .skill .card:hover:after {
@@ -675,7 +675,7 @@ ul {
   width: 0;
   background-color: rgb(183, 0, 255);
 
-  transition: .5s;
+  transition: .9s;
 }
 
 .main .skill .card:hover:before {
